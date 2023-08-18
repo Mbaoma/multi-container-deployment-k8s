@@ -1,7 +1,9 @@
 # multi-container-deployment-k8s
+
 To build and deploy a multi-tier web application using Kubernetes and Docker. Components include: A single-instance Redis to store guestbook entries, Multiple web frontend instances
 
 ## Running the app (Kubernetes Cluster)
+
 - Set up an Ingress controller in Docker Desktop environment on a Mac
 
 ```
