@@ -3,13 +3,14 @@ To build and deploy a multi-tier web application using Kubernetes and Docker. Co
 
 ## Running the app (Kubernetes Cluster)
 - Set up an Ingress controller in Docker Desktop environment on a Mac
-``
+
+```
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.0/deploy/static/provider/cloud/deploy.yaml
 $ kubectl apply -f ingress.yaml
 ```
 
 - Apply configurations to run in local environment (I am using Docker Desktop on my Mac)
-``
+```
 $ kubectl apply -f k8s-config
 ```
 
