@@ -65,4 +65,6 @@ $ kubectl get service
 
 ##  Deploying on Google Kubernetes Engine (GKE)
 
+<img width="724" alt="image" src="https://github.com/brikis98/terraform-up-and-running-code/assets/49791498/75838677-8986-4802-be65-0b0816d9500a">
+
 *[Reference](https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook)*
