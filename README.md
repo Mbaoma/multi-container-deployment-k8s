@@ -1,9 +1,12 @@
 # multi-container-deployment-k8s
+
 To build and deploy a multi-tier web application using Kubernetes and Docker. Components include: A single-instance Redis to store guestbook entries, Multiple web frontend instances
 
 ## Running the app (Kubernetes Cluster)
+
 - Set up an Ingress controller in Docker Desktop environment on a Mac
-``
+
+```
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.0/deploy/static/provider/cloud/deploy.yaml
 $ kubectl apply -f ingress.yaml
 ```
@@ -17,10 +20,6 @@ $ kubectl apply -f k8s-config
 ```
 kubectl port-forward svc/frontend 8080:80
 ```
-
-<img width="991" alt="image" src="https://github.com/Mbaoma/fastAPI/assets/49791498/6f8e7492-ceab-4559-a286-b4f4ae1711bc">
-
-<img width="832" alt="image" src="https://github.com/Mbaoma/fastAPI/assets/49791498/1c0cb7f1-dd0e-4c7d-b757-3b6ef45ff608">
 
 <img width="684" alt="image" src="https://github.com/Mbaoma/multi-container-deployment-k8s/assets/49791498/f2c7a60b-affe-4748-bfde-328939c6804b">
 
@@ -65,7 +64,5 @@ $ kubectl get service
 ```
 
 ##  Deploying on Google Kubernetes Engine (GKE)
-
-<img width="724" alt="image" src="https://github.com/brikis98/terraform-up-and-running-code/assets/49791498/75838677-8986-4802-be65-0b0816d9500a">
 
 *[Reference](https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook)*
